@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Affinity - Happy Birthday Affi</title>
+  <style>
+    /* General Reset */
+    body {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Arial', sans-serif;
+      background: linear-gradient(to bottom, #ffcccc, #ffe6e6, #fff0f0);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      overflow: hidden;
+    }
+
+    /* Container Styling */
+    .container {
+      text-align: center;
+      padding: 20px;
+    }
+
+    /* Title Styling */
+    .title {
+      font-size: 4rem;
+      font-weight: bold;
+      color: #ff1a1a;
+      margin-bottom: 20px;
+      text-shadow: 3px 3px 5px #b30000;
+    }
+
+    /* Decorative Cakes */
+    .cakes {
+      font-size: 3rem;
+      margin-bottom: 20px;
+      animation: bounce 1.5s infinite;
+    }
+
+    @keyframes bounce {
+      0%, 100% {
+        transform: translateY(0);
+      }
+      50% {
+        transform: translateY(-15px);
+      }
+    }
+
+    /* Message Box Styling */
+    .message-box {
+      background: rgba(255, 240, 240, 0.95);
+      padding: 30px;
+      border-radius: 20px;
+      border: 4px dotted #ff4d4d;
+      box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.3);
+      display: inline-block;
+      font-size: 1.2rem;
+      line-height: 1.8;
+      max-width: 500px;
+      text-align: center;
+      position: relative;
+    }
+
+    .message-box::before,
+    .message-box::after {
+      content: "💖";
+      font-size: 1.8rem;
+      position: absolute;
+      animation: sparkle 2s infinite;
+    }
+
+    .message-box::before {
+      top: -20px;
+      left: -20px;
+    }
+
+    .message-box::after {
+      bottom: -20px;
+      right: -20px;
+    }
+
+    @keyframes sparkle {
+      0%, 100% {
+        transform: scale(1);
+      }
+      50% {
+        transform: scale(1.2);
+      }
+    }
+
+    /* Paragraph Styling */
+    .message-box p {
+      margin: 10px 0;
+      color: #b30000;
+    }
+
+    .message-box p:last-child {
+      margin-top: 20px;
+      font-weight: bold;
+      font-size: 1.4rem;
+      color: #ff1a1a;
+    }
+
+    /* Heart Animation Background */
+    .hearts {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+      overflow: hidden;
+    }
+
+    .heart {
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      background: #ff4d4d;
+      transform: rotate(45deg);
+      animation: float 4s linear infinite;
+    }
+
+    .heart:before,
+    .heart:after {
+      content: '';
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      background: #ff4d4d;
+      border-radius: 50%;
+    }
+
+    .heart:before {
+      top: -10px;
+      left: 0;
+    }
+
+    .heart:after {
+      top: 0;
+      left: -10px;
+    }
+
+    @keyframes float {
+      0% {
+        transform: translateY(0) rotate(45deg);
+        opacity: 1;
+      }
+      100% {
+        transform: translateY(-300px) rotate(45deg);
+        opacity: 0;
+      }
+    }
+
+    /* Randomize Heart Placement */
+    .heart:nth-child(1) {
+      left: 10%;
+      animation-duration: 4s;
+    }
+    .heart:nth-child(2) {
+      left: 30%;
+      animation-duration: 5s;
+      animation-delay: 1s;
+    }
+    .heart:nth-child(3) {
+      left: 50%;
+      animation-duration: 3s;
+      animation-delay: 2s;
+    }
+    .heart:nth-child(4) {
+      left: 70%;
+      animation-duration: 6s;
+      animation-delay: 0.5s;
+    }
+    .heart:nth-child(5) {
+      left: 90%;
+      animation-duration: 4.5s;
+      animation-delay: 1.5s;
+    }
+
+    /* Footer Styling */
+    footer {
+      margin-top: 20px;
+      font-size: 1rem;
+      color: #990000;
+    }
+  </style>
+</head>
+<body>
+  <!-- Floating Hearts -->
+  <div class="hearts">
+    <div class="heart"></div>
+    <div class="heart"></div>
+    <div class="heart"></div>
+    <div class="heart"></div>
+    <div class="heart"></div>
+  </div>
+
+  <div class="container">
+    <!-- Decorative Cakes -->
+    <div class="cakes">🎂 🎂 🎂</div>
+    <!-- Title -->
+    <h1 class="title">Happy Birthday Affi</h1>
+    <!-- Message Box -->
+    <div class="message-box">
+      <p>My Affinite, happy birthday...</p>
+      <p>It’s crazy to think we’re stepping out of our teens,</p>
+      <p>but you’ll always be my young, Mohatarma.</p>
+      <p>I’m wishing for all the happiness, success, and love in the world for you today and always (u are the best).</p>
+      <p>I miss you so much, Affi. You’re my dream, my partner, and the only one I see as my forever.</p>
+      <p>Someday, I know you’ll be my wife, and that thought makes me smile every time.</p>
+      <p>Wish u a successful, smiling, happy, and satisfied life, my Affi. You’re my everything.</p>
+      <p>Always yours, Vedu</p>
+    </div>
+  </div>
+  <footer>Made with ❤️ for Affi</footer>
+</body>
+</html>
